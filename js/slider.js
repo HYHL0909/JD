@@ -99,7 +99,7 @@ class Slider{
                 clearInterval(animate)
                 this.animated=false
 
-                if(parseFloat(this.pocBox.style.left)==0){
+                if(parseFloat(this.picBox.style.left)==0){
 
                     //狸猫换太子，将第一个的第五换成第五个的第五，这里的五就是图片的个数
                     this.picBox.style.left=-this.sliders*this.sliderWidth+"px"
@@ -137,16 +137,19 @@ class Slider{
     leftRight(){
         this.box.querySelector(".left-box").addEventListener("click",()=>{
             console.log("left");
-
+         
+            
             //如果向右按超出了，则
             if(this.animated){
                 return
             }
             if(this.index-1<1){
+
                 this.index=this.Sliders
             }else{
                 this.index--
             }
+            console.log(this.index)
             this.move(-this.sliderWidth)
         })
 
