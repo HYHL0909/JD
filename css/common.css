@@ -1,0 +1,26 @@
+/* 公共部分 */
+body{
+    font-size: 14px;
+    background: #f4f4f4;
+}
+
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url('./font/iconfont.ttf?t=1646560562890') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* 什么作用？ */
+  .clearfix::after{
+      content:"";
+      clear:both;
+      display: block;
+      height: 0px;
+
+  }
